@@ -1,0 +1,42 @@
+body { /* Selector de etiqueta "body" = cambia las especificaciones del documento html */
+    font-family: sans-serif;  /*Cambia el tipo de fuente en todo el documeto html*/
+    
+    margin: 0;/*Establece una margen de 0 en el docuemto html */
+}
+
+.contenedor { /*Selector de clase "contenedor" -> div contenedor de las etiquetas.  Aplica los cambios a todo lo contenido en el div con esta clase */
+    display: flex; /*Establece el tipo de posicionamiento */ 
+
+    flex-wrap: wrap; /*especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas */ 
+
+    justify-content: space-around; /*controla la alineación de todos los elementos en el eje principal*/
+
+    padding: 20px;/*Controla el matrgen interno del elemneto*/
+}
+
+.tarjeta { /*Ajusta las propiedades de los contenedores */
+    width: 300px; /*Ajusta el ancho de las tarjetas*/    
+    margin: 10px; /*Ajusta las margenes externas de las tarjetas   */
+    border: 1px solid #ccc; /*Aplica un borde mas definido a las tarjetas, con un grosor de 1px y un color #ccc*/
+    padding: 20px;/*Aplica una margen interna ( separa los bordes del conteido)*/ 
+    border-radius: 5px; /*Ajusta el radio del borde externo; cuando recibe solo un argumento se palica a los 4 lados*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.tarjeta img { /*Ajusta los parametros de las imagenes dentro del contenedor con clase -->"tarjeta"*/
+    /* width: 100%; /*Linea comentada debido a que la propiedad widgth 100% daña el aspecto visual de las tarjetas   */
+    height: auto; /*Ajusta el alto de forma automatica */
+    display: block; 
+    border-radius: 5px 5px 0 0;  /*Ajusta el radio del borde externo  */
+}
+
+.tarjeta h3 {
+    margin-top: 10px; /*establece el margen superior de un elemento especificando una longitud o un porcentaje*/
+}
+
+.tarjeta p {/* Ajusta los parametros de los elementos "p" contenidos dentro de la clase "tarjeta"*/
+
+    font-size: 0.9em; /*Cambia el tamapño de la fuente de la etiqueta "p"--> contenida en un elemnto de la clase "tarjeta"*/
+
+    line-height: 1.5; /*Aplica mayor altura a las lineas de texto, mejorando la lectura*/ 
+}
